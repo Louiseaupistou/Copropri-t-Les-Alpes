@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gazettes - Copropriété Les Alpes</title>
+
+  <style>
+    :root {
+      --bg: #f4f7f6;
+      --card: #ffffff;
+      --text: #24313f;
+      --muted: #6b7280;
+      --green: #009879;
+      --green-dark: #007a63;
+      --blue: #0077b6;
+      --border: #d8e2e0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef7f6, #f8f5ef);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 32px 20px 16px;
+    }
+
+    .logo {
+      max-width: 520px;
+      width: 92%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 50px);
+      color: var(--text);
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 16px auto 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(1040px, 92%);
+      margin: 24px auto 56px;
+    }
+
+    .featured {
+      background: var(--card);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.10);
+      border: 1px solid var(--border);
+      margin-bottom: 28px;
+    }
+
+    .label {
+      display: inline-block;
+      background: #e5f7f3;
+      color: var(--green-dark);
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    .featured p,
+    .card p {
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0 0 22px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 13px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: transform 0.15s ease, background 0.15s ease;
+      font-size: 15px;
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+    }
+
+    .primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .primary:hover {
+      background: var(--green-dark);
+    }
+
+    .secondary {
+      border: 2px solid var(--green);
+      color: var(--green-dark);
+      background: white;
+    }
+
+    .secondary:hover {
+      background: #eefaf7;
+    }
+
+    .section-title {
+      margin: 34px 0 18px;
+      font-size: 24px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .date {
+      font-size: 14px;
+      color: var(--blue);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 0 20px 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="logo-les-alpes.png" alt="Logo Copropriété Les Alpes">
+    <h1>Les Gazettes de la copropriété</h1>
+    <p class="intro">
+      Retrouvez ici les différentes éditions de la Gazette des Alpes.
+      Chaque numéro peut être consulté en ligne ou téléchargé au format PDF.
+    </p>
+  </header>
+
+  <main>
+    <section class="featured">
+      <span class="label">Dernière édition</span>
+      <h2>Gazette n°2 — Juin 2026</h2>
+      <p>
+        La dernière édition disponible de la Gazette de la copropriété Les Alpes.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="gazettes/gazette-2026-06.pdf" target="_blank" rel="noopener">
+          Lire la gazette
+        </a>
+        <a class="button secondary" href="gazettes/gazette-2026-06.pdf" download>
+          Télécharger
+        </a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Archives</h2>
+
+    <section class="grid">
+      <article class="card">
+        <div class="date">Mars 2026</div>
+        <h2>Gazette n°1</h2>
+        <p>Première édition de la Gazette de la copropriété.</p>
+        <div class="buttons">
+          <a class="button primary" href="gazettes/gazette-2026-03.pdf" target="_blank" rel="noopener">Lire</a>
+          <a class="button secondary" href="gazettes/gazette-2026-03.pdf" download>Télécharger</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="date">Juin 2026</div>
+        <h2>Gazette n°2</h2>
+        <p>Deuxième édition de la Gazette de la copropriété.</p>
+        <div class="buttons">
+          <a class="button primary" href="gazettes/gazette-2026-06.pdf" target="_blank" rel="noopener">Lire</a>
+          <a class="button secondary" href="gazettes/gazette-2026-06.pdf" download>Télécharger</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Copropriété Les Alpes — Page des gazettes
+  </footer>
+</body>
+</html>
